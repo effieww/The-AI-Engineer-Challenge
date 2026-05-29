@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #faf6f0;
+  --foreground: #1c1917;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+/* Subtle warm gradient behind the chat card */
+.coach-bg {
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(26, 107, 107, 0.12), transparent),
+    radial-gradient(ellipse 60% 40% at 100% 100%, rgba(224, 122, 95, 0.08), transparent),
+    #faf6f0;
+}
